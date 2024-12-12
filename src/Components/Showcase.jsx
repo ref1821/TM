@@ -24,6 +24,7 @@ function init() {
 
     let control = new OrbitControls(camera, renderer.domElement);
 
+    control = control
     let light = new THREE.DirectionalLight(0xffffff);
     light.position.set(0, 3, 10);
     scene.add(light);
