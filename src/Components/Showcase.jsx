@@ -22,6 +22,8 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
+    let control = new OrbitControls(camera, renderer.domElement);
+
     let light = new THREE.DirectionalLight(0xffffff);
     light.position.set(0, 3, 10);
     scene.add(light);
