@@ -10,17 +10,17 @@ function Navbar() {
     };
 
     return (
-        <nav className="navbar">
-            <button onClick={() => handleButtonClick('TMR24')}>Carro completo</button>
-            <button onClick={() => handleButtonClick('Chassis')}>Chasis</button>
-            <button onClick={() => handleButtonClick('Suspension')}>Suspensión</button>
-            <button onClick={() => handleButtonClick('Brake-system')}>Brake system</button>
-            <button onClick={() => handleButtonClick('Powertrain')}>Powertrain</button>
-            <button onClick={() => handleButtonClick('Cooling')}>Cooling</button>
-            <button onClick={() => handleButtonClick('Electronics')}>Electronics</button>
-            <button onClick={() => handleButtonClick('Front-wing')}>Alerón delantero</button>
-            <button onClick={() => handleButtonClick('Rear-wing')}>Alerón trasero</button>
-            <button onClick={() => handleButtonClick('Diffusor')}>Difusor</button>
+        <nav className='bg-mblue'>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('TMR24')}>Carro completo</button>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Chassis')}>Chasis</button>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Suspension')}>Suspensión</button>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Brake-system')}>Brake system</button>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Powertrain')}>Powertrain</button>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Cooling')}>Cooling</button>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Electronics')}>Electronics</button>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Front-wing')}>Alerón delantero</button>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Rear-wing')}>Alerón trasero</button>
+            <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Diffusor')}>Difusor</button>
         </nav>
     );
 }

@@ -6,7 +6,7 @@ let scene, camera, renderer, object;
 
 function init() {
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x707070);
+    scene.background = new THREE.Color(0x83aff7);
 
     camera = new THREE.PerspectiveCamera(
         75,
@@ -14,9 +14,9 @@ function init() {
         0.1,
         10000
     );
-    camera.position.x = 7;
-    camera.position.y = 5;
-    camera.position.z = 10;
+    camera.position.x = 15;
+    camera.position.y = 20;
+    camera.position.z = 25;
 
     renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
