@@ -10,7 +10,7 @@ function Navbar() {
     };
 
     return (
-        <nav className='bg-mblue'>
+        <nav className='bg-cream'>
             <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('TMR24')}>Carro completo</button>
             <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Chassis')}>Chasis</button>
             <button className='m-5 p-3 border-2 border-dorange rounded-md bg-lblue' onClick={() => handleButtonClick('Suspension')}>Suspensión</button>

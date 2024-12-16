@@ -6,7 +6,7 @@ let scene, camera, renderer, object;
 
 function init() {
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x83aff7);
+    scene.background = new THREE.Color(0xffffff);
 
     camera = new THREE.PerspectiveCamera(
         75,
@@ -14,12 +14,13 @@ function init() {
         0.1,
         10000
     );
-    camera.position.x = 15;
-    camera.position.y = 20;
-    camera.position.z = 25;
+    camera.position.x = 1;
+    camera.position.y = 35;
+    camera.position.z = 1;
 
+    camera.rotation.z = Math.PI / 2;
     renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight-150);
     document.body.appendChild(renderer.domElement);
 
     let control = new OrbitControls(camera, renderer.domElement);
@@ -49,8 +50,8 @@ export function Showcase(props) {
             model,
             new THREE.MeshLambertMaterial({ color: 0x808080 })
         );
-        object.scale.set(0.05, 0.05, 0.05);
-        object.position.set(0, 0, 0);
+        object.scale.set(props.scale, props.scale, props.scale);
+        object.position.set(props.x, props.y, props.z);
         object.rotation.x = -Math.PI / 2;
         scene.add(object);
         console.log('Objeto agregado a la escena:', object);
