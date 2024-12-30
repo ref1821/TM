@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Horizon';
+    src: url('../public/fonts/horizon.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../public/fonts/montserrat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

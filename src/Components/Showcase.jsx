@@ -14,13 +14,13 @@ function init() {
         0.1,
         10000
     );
-    camera.position.x = 1;
-    camera.position.y = 35;
-    camera.position.z = 1;
+    camera.position.x = 0.1;
+    camera.position.y = 0.1;
+    camera.position.z = 0.1;
 
     camera.rotation.z = Math.PI / 2;
     renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight-150);
+    renderer.setSize(window.innerWidth, window.innerHeight-200);
     document.body.appendChild(renderer.domElement);
 
     let control = new OrbitControls(camera, renderer.domElement);
@@ -34,6 +34,20 @@ function init() {
     light2.position.set(0, -3, -10);
     scene.add(light2);
 
+    let light3 = new THREE.DirectionalLight(0xffffff);
+    light3.position.set(0, 0, 0);
+    scene.add(light2);
+    
+	const dirLight = new THREE.DirectionalLight( 0xffffff );
+    dirLight.position.set( - 3, 10, - 10 );
+    dirLight.castShadow = true;
+	dirLight.shadow.camera.top = 2;
+	dirLight.shadow.camera.bottom = - 2;
+	dirLight.shadow.camera.left = - 2;
+	dirLight.shadow.camera.right = 2;
+	dirLight.shadow.camera.near = 0.1;
+	dirLight.shadow.camera.far = 40;
+	scene.add( dirLight );
     animate();
 }
 

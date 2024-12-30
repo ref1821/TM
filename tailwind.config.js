@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        horizon: ['Horizon', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       colors: {
         dblue: '#032661',
         dorange: '#f56e00',
