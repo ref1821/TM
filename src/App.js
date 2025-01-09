@@ -6,9 +6,9 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Page loc='TMR24.stl' scale='0.00005' x='0' y='0' z='0'/>} />
+                <Route path="/" element={<Page loc='TMR24_3.stl' scale='0.00005' x='0' y='0' z='0'/>} />
                 <Route path="/TMR24" element={<Page loc='TMR24.stl' scale='0.00005' x='0' y='0' z='0'/>} />
-                <Route path="/Chassis" element={<Page loc='Chassis.stl' scale='0.00007' x='0' y='0' z='0'/>} />
+                <Route path="/Chassis" element={<Page loc='Chassis.stl' scale='0.00006' x='0' y='0.02' z='0'/>} />
                 <Route path="/Wheel-system" element={<Page loc='Wheel-system2.stl' scale='0.0002' x='-0.01' y='0.07' z='-0.01' />} />
                 <Route path="/Powertrain" element={<Page loc='Powertrain.stl' scale='0.0002' x='0' y='0' z='0'/>} />
                 <Route path="/Cooling" element={<Page loc='Cooling.stl' scale='0.00018' x='-0.06' y='0' z='0'/>} />

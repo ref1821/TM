@@ -17,7 +17,7 @@ export const Page = (props) => {
       </div>
       <Showcase location={props.loc} scale={props.scale} x={props.x} y={props.y} z={props.z}/>
       <a href="https://www.instagram.com/tmracingteam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
-  <div className="fixed bottom-0 w-full sm:bottom-4 sm:right-4 sm:w-64 p-4 bg-white shadow-lg rounded-none sm:rounded-lg z-50 text-center">
+  <div className="fixed bottom-0 w-full sm:bottom-4 sm:right-4 sm:w-48 p-4 bg-white shadow-lg rounded-none sm:rounded-lg z-50 text-center">
     {/* Imagen, visible solo en pantallas más grandes */}
     <img
       src="/qrinsta.png"
@@ -30,7 +30,7 @@ export const Page = (props) => {
   </div>
 </a>
 
-      <div className="fixed bottom-4 left-4 w-64 p-4 bg-white shadow-lg rounded-lg z-50 hidden sm:block">
+      <div className="fixed bottom-4 left-4 w-48 p-4 bg-white shadow-lg rounded-lg z-50 hidden sm:block">
         <img
           src="/qr.png"
           alt="Descripción"
