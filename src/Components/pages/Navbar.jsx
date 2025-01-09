@@ -51,20 +51,11 @@ function Navbar() {
                     </button>
                     <button
                         className="block m-3 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
-                        onClick={() => handleButtonClick("Suspension")}
-                    >
-                        <div className="flex justify-center">
-                            <GiSpring />
-                            <p className='ml-2'>Suspension</p>
-                        </div>
-                    </button>
-                    <button
-                        className="block m-3 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
-                        onClick={() => handleButtonClick("Brake-system")}
+                        onClick={() => handleButtonClick("Wheel-system")}
                     >
                         <div className="flex justify-center">
                             <GiCarWheel />
-                            <p className='ml-2'>Brake system</p>
+                            <p className='ml-2'>Wheel system</p>
                         </div>
                     </button>
                     <button
