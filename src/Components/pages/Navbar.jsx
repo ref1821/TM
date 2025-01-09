@@ -125,9 +125,10 @@ function Navbar() {
             </div>
 
             {/* Full navbar for larger screens */}
-            <nav className="hidden sm:block bg-gray-100 font-montserrat text-md">
+            <nav className="bg-gray-100 font-montserrat text-md justify-center items-center">
+                <div className='hidden sm:flex justify-center items-center'>
                 <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
+                    className="m-2 p-2 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
                     onClick={() => handleButtonClick("TMR24")}
                 >
                     <div className="flex justify-center">
@@ -137,7 +138,7 @@ function Navbar() {
                 </button>
 
                 <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
+                    className="m-2 p-2 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
                     onClick={() => handleButtonClick("Chassis")}
                 >
                     <div className="flex justify-center">
@@ -146,25 +147,16 @@ function Navbar() {
                     <p>Chassis</p>
                 </button>
                 <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
-                    onClick={() => handleButtonClick("Suspension")}
-                >
-                    <div className="flex justify-center">
-                        <GiSpring />
-                    </div>
-                    <p>Suspension</p>
-                </button>
-                <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
-                    onClick={() => handleButtonClick("Brake-system")}
+                    className="m-2 p-2 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
+                    onClick={() => handleButtonClick("Wheel-system")}
                 >
                     <div className="flex justify-center">
                         <GiCarWheel />
                     </div>
-                    <p>Brake system</p>
+                    <p>Wheel system</p>
                 </button>
                 <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
+                    className="m-2 p-2 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
                     onClick={() => handleButtonClick("Powertrain")}
                 >
                     <div className="flex justify-center">
@@ -173,7 +165,7 @@ function Navbar() {
                     <p>Powertrain</p>
                 </button>
                 <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
+                    className="m-2 p-2 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
                     onClick={() => handleButtonClick("Cooling")}
                 >
                     <div className="flex justify-center">
@@ -181,8 +173,10 @@ function Navbar() {
                     </div>
                     <p>Cooling</p>
                 </button>
+                </div>
+                <div className='hidden sm:flex justify-center items-center'>
                 <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
+                    className="m-2 p-2 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
                     onClick={() => handleButtonClick("Electronics")}
                 >
                     <div className="flex justify-center">
@@ -191,7 +185,7 @@ function Navbar() {
                     <p>Electronics</p>
                 </button>
                 <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
+                    className="m-2 p-2 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
                     onClick={() => handleButtonClick("Front-wing")}
                 >
                     <div className="flex justify-center">
@@ -200,7 +194,7 @@ function Navbar() {
                     <p>Front wing</p>
                 </button>
                 <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
+                    className="m-2 p-2 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
                     onClick={() => handleButtonClick("Rear-wing")}
                 >
                     <div className="flex justify-center">
@@ -209,7 +203,7 @@ function Navbar() {
                     <p>Rear wing</p>
                 </button>
                 <button
-                    className="m-5 p-3 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
+                    className="m-2 p-2 bg-gray-100 border-b-2 border-gray-300 rounded-md hover:border-gray-300 hover:bg-gray-300"
                     onClick={() => handleButtonClick("Diffusor")}
                 >
                     <div className="flex justify-center">
@@ -217,6 +211,7 @@ function Navbar() {
                     </div>
                     <p>Diffuser</p>
                 </button>
+                </div>
             </nav>
         </div>
     );
